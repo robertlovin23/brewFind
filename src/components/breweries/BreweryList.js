@@ -16,8 +16,25 @@ class BreweryList extends React.Component{
             )
         }
     }
+    renderAdminButtons(brewery){
+        if(brewery.userId === this.props.userId){
+            return(
+            <div>
+                <div style={{display: "inline"}}>
+                    <Link to={`/breweries/edit/${brewery.id}`} className="btn btn-success">
+                        Edit
+                    </Link>
+                </div>
+                <div style={{marginLeft:"10px", display: "inline"}}>
+                    <Link to={`/breweries/delete/${brewery.id}`}className="btn btn-danger">
+                        Delete
+                    </Link>
+                </div>
+            </div>
+            )
+        }
+    }
     renderBrewList(){
-        if(this.props.isSignedIn){
         return this.props.breweries.map(brewery => {
             return(
             <div className="col-lg-4 col-sm-12" style={{display: "block", marginBottom:"20px"}}>
@@ -29,40 +46,12 @@ class BreweryList extends React.Component{
                         </h5>
                         <h6 className="card-subtitle mb-2 text-muted">{brewery.location}</h6>
                         <p className="cart-text">{brewery.description}</p>
-                        <div style={{display: "inline"}}>
-                            <Link to={`/breweries/edit/${brewery.id}`} className="btn btn-success">
-                                Edit
-                            </Link>
-                        </div>
-                        <div style={{marginLeft:"10px", display: "inline"}}>
-                            <Link to={`/breweries/delete/${brewery.id}`}className="btn btn-danger">
-                                Delete
-                            </Link>
-                        </div>
+                        {this.renderAdminButtons(brewery)}
                     </div>
                 </div>
             </div>
             )
         })
-        }
-        else{
-            return this.props.breweries.map(brewery => {
-                return(
-                <div className="col-lg-4 col-sm-12" style={{display: "block", marginBottom:"20px"}}>
-                    <div key={brewery.id} className="card">
-                        <div className="card-body">
-    
-                            <h5 className="card-title">
-                                <Link to={`/breweries/show/${brewery.id}`}>{brewery.name}</Link>
-                            </h5>
-                            <h6 className="card-subtitle mb-2 text-muted">{brewery.location}</h6>
-                            <p className="cart-text">{brewery.description}</p>
-                        </div>
-                    </div>
-                </div>
-                )
-            }) 
-        }
     }
     render(){
         return(
