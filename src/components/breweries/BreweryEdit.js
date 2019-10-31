@@ -15,7 +15,7 @@ class BreweryEdit extends React.Component{
         return(
             <div className="container">
                 <h3 style={{textAlign:"center"}}>Edit Brewery</h3>
-                 <BreweryForm onSubmit={this.onSubmit} initialValues={_.pick(this.props.breweries, 'name','description','location')}/>
+                 <BreweryForm onSubmit={this.onSubmit} initialValues={_.pick(this.props.breweries, 'name','description','location','tour')}/>
             </div>
         )
     }
