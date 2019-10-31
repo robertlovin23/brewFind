@@ -1,0 +1,25 @@
+{
+  "breweries": [
+    {
+      "name": "Coors Brewery",
+      "description": "Maker of Coors Light, Coors Original",
+      "location": "Golden, CO",
+      "userId": "112797517083217930283",
+      "id": 1
+    },
+    {
+      "name": "Shiner",
+      "location": "Shiner, TX",
+      "description": "Texas's finest beer",
+      "userId": "112797517083217930283",
+      "id": 2
+    },
+    {
+      "name": "Iron Monk",
+      "description": "Stillwater Beer that is very good.",
+      "location": "Stillwater, OK",
+      "userId": "112797517083217930283",
+      "id": 3
+    }
+  ]
+}
