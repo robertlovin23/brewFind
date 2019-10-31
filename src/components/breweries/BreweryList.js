@@ -10,7 +10,7 @@ class BreweryList extends React.Component{
     renderCreateButton(){
         if(this.props.isSignedIn){
             return(
-                <Link to="/breweries/new" className="btn btn-primary">
+                <Link style={{marginBottom:"10px"}} to="/breweries/new" className="btn btn-primary">
                     New Brewery
                 </Link>
             )
@@ -20,7 +20,7 @@ class BreweryList extends React.Component{
         if(this.props.isSignedIn){
         return this.props.breweries.map(brewery => {
             return(
-            <div className="col-4" style={{display: "block", marginBottom:"20px"}}>
+            <div className="col-lg-4 col-sm-12" style={{display: "block", marginBottom:"20px"}}>
                 <div key={brewery.id} className="card">
                     <div className="card-body">
 
@@ -48,7 +48,7 @@ class BreweryList extends React.Component{
         else{
             return this.props.breweries.map(brewery => {
                 return(
-                <div className="col-4" style={{display: "block", marginBottom:"20px"}}>
+                <div className="col-lg-4 col-sm-12" style={{display: "block", marginBottom:"20px"}}>
                     <div key={brewery.id} className="card">
                         <div className="card-body">
     
