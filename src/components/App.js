@@ -16,8 +16,8 @@ const App = () => {
                 <Route path ="/" exact component={BreweryList}/>
                 <Route path="/breweries/new" component={BreweryCreate}/>
                 <Route path="/breweries/show/:id" component={BreweryShow}/>
-                <Route path="/breweries/edit/:id"  exact component={BreweryEdit}/>
-                <Route path="/breweries/delete/:id" exact component={BreweryDelete}/>
+                <Route path="/breweries/edit/:id" component={BreweryEdit}/>
+                <Route path="/breweries/delete/:id" component={BreweryDelete}/>
             </div>
         </Router>
     )

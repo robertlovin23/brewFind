@@ -1,25 +1,36 @@
 {
   "breweries": [
     {
-      "name": "Coors Brewery",
-      "description": "Maker of Coors Light, Coors Original",
-      "location": "Golden, CO",
+      "name": "Coop Ale Works",
+      "location": "Oklahoma City, OK",
+      "description": "Oklahoma City-based COOP Ale Works today announced a $20 million project to revitalize the 23rd Street National Guard Armory and transform the vacated 87,000 sq. ft. space into a manufacturing brewery, restaurant, event space and boutique hotel.  Following a 9-month request-for-proposal process, the state’s Office of Management and Enterprise Services awarded COOP the 83-year-old art deco building, which was once headquarters for the 45th Division Infantry but was shuttered in 2010. The purchase price of the building is $600,000.",
       "userId": "112797517083217930283",
-      "id": 1
+      "id": 3,
+      "tour": "https://coopaleworks.com/taproom/"
     },
     {
-      "name": "Shiner",
-      "location": "Shiner, TX",
-      "description": "Texas's finest beer",
+      "name": "Shiner Bock ",
+      "location": "Shiner, Texas",
+      "description": "Today’s Spoetzl Brewery is a far cry from the old tin shed where Shiner first flowed back in 1909. We think our founder, Kosmos Spoetzl, would probably be amazed at our state-of-the art Brew House. He’d also be happy to know we still brew every drop of Shiner right here in Shiner, Texas. Stop in for a tour and the first round is on us. And the second.",
       "userId": "112797517083217930283",
-      "id": 2
+      "id": 4,
+      "tour": "https://www.shiner.com/"
+    },
+    {
+      "name": "Coors",
+      "location": "Golden, CO",
+      "description": "See and taste traditional brewing at the foot of the Rocky Mountains in the largest single-site brewery in the world! Since 1873 the Coors Brewery has thrived on a legacy of quality, innovation and customer service.  The Coors Brewery Tour showcases our history and passion for brewing in a 30-minute look at our malting, brewing and packaging processes. We also share old photos, neon signs, historical beer cans, bottles and memorabilia from our archives.",
+      "userId": "112797517083217930283",
+      "id": 5,
+      "tour": "https://www.millercoors.com/breweries/coors-brewing-company"
     },
     {
       "name": "Iron Monk",
-      "description": "Stillwater Beer that is very good.",
+      "description": "Visit Oklahoma's premier craft brewery tap room in Downtown Stillwater. Select one of your year-round favorites or try one of our ever revolving small-batch brews that are exclusive to the Tap Room. And, if you're hungry we've got you covered. We've partnered with the PurdyQ BBQ Food Truck and Macarena's Mexican Street Cafe (Wednesday through Friday evenings).",
       "location": "Stillwater, OK",
+      "tour": "https://www.ironmonkbeer.com/",
       "userId": "112797517083217930283",
-      "id": 3
+      "id": 6
     }
   ]
 }

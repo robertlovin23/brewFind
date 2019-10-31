@@ -21,6 +21,8 @@ class BreweryShow extends React.Component{
                 <h5>{this.props.breweries.name}</h5>
                 <h6 className="card-subtitle mb-2 text-muted">{this.props.breweries.location}</h6>
                 <p>{this.props.breweries.description}</p>
+                <h6>Website:</h6>
+                <p>{this.props.breweries.tour}</p>
             </div>
         )
     }

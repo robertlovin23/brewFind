@@ -20,7 +20,7 @@ class BreweryList extends React.Component{
         if(this.props.isSignedIn){
         return this.props.breweries.map(brewery => {
             return(
-            <div className="col-4" style={{display: "block"}}>
+            <div className="col-4" style={{display: "block", marginBottom:"20px"}}>
                 <div key={brewery.id} className="card">
                     <div className="card-body">
 
@@ -29,12 +29,16 @@ class BreweryList extends React.Component{
                         </h5>
                         <h6 className="card-subtitle mb-2 text-muted">{brewery.location}</h6>
                         <p className="cart-text">{brewery.description}</p>
-                        <Link to={`/breweries/edit/${brewery.id}`} className="btn btn-success">
-                            Edit
-                        </Link>
-                        <Link to={`/breweries/delete/${brewery.id}`} className="btn btn-negative">
-                            Delete
-                        </Link>
+                        <div style={{display: "inline"}}>
+                            <Link to={`/breweries/edit/${brewery.id}`} className="btn btn-success">
+                                Edit
+                            </Link>
+                        </div>
+                        <div style={{marginLeft:"10px", display: "inline"}}>
+                            <Link to={`/breweries/delete/${brewery.id}`}className="btn btn-danger">
+                                Delete
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -44,7 +48,7 @@ class BreweryList extends React.Component{
         else{
             return this.props.breweries.map(brewery => {
                 return(
-                <div className="col-4" style={{display: "block"}}>
+                <div className="col-4" style={{display: "block", marginBottom:"20px"}}>
                     <div key={brewery.id} className="card">
                         <div className="card-body">
     
@@ -64,11 +68,10 @@ class BreweryList extends React.Component{
         return(
             <div className="container">
                 <h3 style={{textAlign: 'center'}}>List of Breweries</h3>
-                <div className="row">
-
+                <div className="row" >
                     {this.renderBrewList()}
                 </div>
-                <div style={{float:"right", marginTop:"10px"}}>
+                <div style={{float:"right"}}>
                     {this.renderCreateButton()}
                 </div>
             </div>
